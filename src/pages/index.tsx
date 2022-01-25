@@ -3,7 +3,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
 import { HomeContainer } from '../styles/HomeStyles'
-import Header from '../components/Header';
+import { Header } from '../components/Header';
 import HomeHero from '../components/HomeHero';
 import Experiences from '../components/Experiences';
 import Projects from '../components/Projects';
