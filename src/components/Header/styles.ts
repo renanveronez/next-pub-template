@@ -34,62 +34,123 @@ export const HeaderContent = styled.section`
 `
 
 export const Menu = styled.section`
+  /*Fullscreen*/
+  .menuSectionOn {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #11172B;
+    opacity: 0.9;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .menuToggle{
+      position: absolute;
+      right: 25px;
+      top: 25px;
+
+      .one{
+        transform: rotate(45deg) translate(7px, 7px);
+        background-color: #fff;
+      }
+
+      .two{
+        opacity: 0;
+      }
+
+      .three{
+        transform: rotate(-45deg) translate(8px, -9px);
+        background-color: #fff;
+      }
+    }
+  }
+
+
 
   ul {
-      flex-direction: row;
+    flex-direction: row;
+    display: flex;
+    list-style: none;
 
-      li {
-        list-style: none;
-        padding-right: 2.5rem;
-      }
-
-      a {
-        display: inline-block;
-        position: relative;
-        padding: 0 0.5rem;
-        height: 5rem;
-        line-height: 5.5rem;
-        color: #d0e5ec;
-        font-size: 1.5rem;
-        transition: color 0.2s;
-
-        & + a {
-          margin-left: 2rem;
-        }
-
-        &:hover {
-          color: #88cae2;
-        }
-
-        &.active {
-          color: #88cae2;
-          font-weight: bold;
-        }
-
-        &.active::after {
-          content: '';
-          height: 5px;
-          border-radius: 3px 3px 0 0;
-          width: 100%;
-          position: absolute;
-          bottom: 1px;
-          left: 0;
-          background: #88cae2;
-        }
-      }
-    }
-
-    ul {
-      display: flex;
+    li {
       list-style: none;
+      padding-right: 2.5rem;
     }
+
+    a {
+      display: inline-block;
+      position: relative;
+      padding: 0 0.5rem;
+      height: 5rem;
+      line-height: 5.5rem;
+      color: #d0e5ec;
+      font-size: 1.5rem;
+      transition: color 0.2s;
+
+      & + a {
+        margin-left: 2rem;
+      }
+
+      &:hover {
+        color: ${({ theme }) => theme.menuSelected};
+      }
+
+      &.active {
+
+        color: ${({ theme }) => theme.menuSelected};
+        font-weight: bold;
+      }
+
+      &.active::after {
+        content: '';
+        height: 5px;
+        border-radius: 3px 3px 0 0;
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        background: ${({ theme }) => theme.menuSelected};
+      }
+    }
+  }
 
 
   @media (min-width:200px) and (max-width:1120px){
+    .listItems {
+      padding-left: 60px;
+      padding-bottom: 50px;
+    }
+
+    .menuSection {
+      .listItems {
+      display: none;
+      }
+    }
+
+    .one,
+    .two,
+    .three {
+      background-color:#ffffff;
+      height: 5px;
+      width: 100%;
+      margin: 6px auto;
+      transition-duration: 0.3s;
+    }
+
+    .menuToggle{
+      width: 40px;
+      height: 30px;
+      margin-right: 0px;
+    }
+
     ul {
-        display: absolute;
-        flex-direction: column;
-        align-items: center;
+      display: absolute;
+      flex-direction: column;
+      align-items: center;
     }
 
     a {
@@ -107,80 +168,14 @@ export const Menu = styled.section`
       }
 
       &.active {
-        color: #88cae2;
+        color: ${({ theme }) => theme.menuSelected};
         font-weight: bold;
       }
 
       &.active::after {
-        background: #88cae2;
+        background: ${({ theme }) => theme.menuSelected};
+        margin-bottom: 6px;
       }
     }
   }
-  }
-
-
-  @media (max-width: 1120px){
-
-  .menuSection {
-  .listItems {
-  display: none;
-  }
-  }
-
-  .one,
-  .two,
-  .three{
-  background-color:#ffffff;
-  height: 5px;
-  width: 100%;
-  margin: 6px auto;
-  transition-duration: 0.3s;
-  }
-  .menuToggle{
-  width: 40px;
-  height: 30px;
-  margin-right: 0px;
-  }
-
-  /*Fullscreen*/
-  .menuSectionOn {
-  position: absolute;
-  top:0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: #11172B;
-  opacity: 0.9;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-
-  .menuSectionOn nav{
-  display: block;
-  }
-
-
-  .menuSectionOn .menuToggle{
-  position: absolute;
-  right: 25px;
-  top: 25px;
-  }
-
-
-  .menuSectionOn .menuToggle .one{
-  transform: rotate(45deg) translate(7px, 7px);
-  background-color: #fff;
-  }
-
-  .menuSectionOn .menuToggle .two{
-  opacity: 0;
-  }
-
-  .menuSectionOn .menuToggle .three{
-  transform: rotate(-45deg) translate(8px, -9px);
-  background-color: #fff;
-  }
-
 `

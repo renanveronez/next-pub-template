@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { ActiveLink } from './ActiveLink';
 import { Container, HeaderContent, Menu } from './styles';
 
-
 export function Header() {
   const [classOn, setClassOn] = useState(false);
 
