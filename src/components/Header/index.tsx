@@ -1,13 +1,14 @@
 import { useState } from 'react';
-import { ActiveLink } from './ActiveLink';
-import { Container, HeaderContent, Menu } from './styles';
+// import { ActiveLink } from './ActiveLink';
+import NavLink from './NavLink';
+import { Container, MainContainer, HeaderContent, Menu } from './styles';
 
 export function Header() {
   const [classOn, setClassOn] = useState(false);
 
   return (
     <>
-      <Container>
+      <MainContainer>
         {/* Primeira div */}
         <HeaderContent>
           <div>
@@ -25,23 +26,17 @@ export function Header() {
 
               <nav className='listItems'>
 
-                <ul>
-                  <li>
-                    <ActiveLink activeClassName='active' href="/">
-                      <a className='active'>Home</a>
-                    </ActiveLink>
-                  </li>
-                  <li>
-                    <ActiveLink activeClassName='active' href="/projects">
-                      <a>Projetos</a>
-                    </ActiveLink>
-                  </li>
-                </ul>
+                <Container>
+                  <ul>
+                    <NavLink title="Home" path="/" />
+                    <NavLink title="Projects" path="/projects" includes />
+                  </ul>
+                </Container>
               </nav>
             </div>
           </Menu>
         </HeaderContent>
-      </Container>
+      </MainContainer>
     </>
   )
 }

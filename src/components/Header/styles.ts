@@ -1,6 +1,11 @@
+import { lighten } from 'polished';
 import styled from 'styled-components';
 
-export const Container = styled.section`
+interface NavLinkProps {
+  isActive: boolean;
+}
+
+export const MainContainer = styled.section`
   height: 5rem;
   border-bottom: 1px solid ${({ theme }) => theme.text};
   position: fixed;
@@ -42,7 +47,7 @@ export const Menu = styled.section`
     width: 100vw;
     height: 100vh;
     background: #11172B;
-    opacity: 0.9;
+    opacity: 0.95;
     z-index: 10;
     display: flex;
     justify-content: center;
@@ -71,52 +76,7 @@ export const Menu = styled.section`
 
 
 
-  ul {
-    flex-direction: row;
-    display: flex;
-    list-style: none;
 
-    li {
-      list-style: none;
-      padding-right: 2.5rem;
-    }
-
-    a {
-      display: inline-block;
-      position: relative;
-      padding: 0 0.5rem;
-      height: 5rem;
-      line-height: 5.5rem;
-      color: #d0e5ec;
-      font-size: 1.5rem;
-      transition: color 0.2s;
-
-      & + a {
-        margin-left: 2rem;
-      }
-
-      &:hover {
-        color: ${({ theme }) => theme.menuSelected};
-      }
-
-      &.active {
-
-        color: ${({ theme }) => theme.menuSelected};
-        font-weight: bold;
-      }
-
-      &.active::after {
-        content: '';
-        height: 5px;
-        border-radius: 3px 3px 0 0;
-        width: 100%;
-        position: absolute;
-        bottom: 1px;
-        left: 0;
-        background: ${({ theme }) => theme.menuSelected};
-      }
-    }
-  }
 
 
   @media (min-width:200px) and (max-width:1120px){
@@ -179,3 +139,45 @@ export const Menu = styled.section`
     }
   }
 `
+
+export const Container = styled.header`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  border-bottom: 1px solid ${({ theme }) => theme.backgroundLight};
+
+  ul {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+`;
+
+export const NavLinkContainer = styled.li<NavLinkProps>`
+  a {
+    font-size: 1.5rem;
+    color: ${props =>
+    props.isActive ? props.theme.primary : props.theme.textHighlight};
+    transition: 0.5s;
+
+    &:hover {
+      color: ${props =>
+    props.isActive
+      ? lighten(0.2, props.theme.primary)
+      : lighten(0.2, props.theme.textHighlight)};
+    }
+
+    &.active::after {
+        content: '';
+        height: 5px;
+        border-radius: 3px 3px 0 0;
+        width: 100%;
+        position: absolute;
+        bottom: 1px;
+        left: 0;
+        background: green;
+      }
+  }
+`;
