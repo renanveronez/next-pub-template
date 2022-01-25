@@ -1,49 +1,47 @@
 import { useState } from 'react';
 import { ActiveLink } from './ActiveLink';
-import styles from './styles.module.scss';
-
-
+import { Container, HeaderContent, Menu } from './styles';
 
 export function Header() {
   const [classOn, setClassOn] = useState(false);
 
   return (
     <>
-      <header className={styles.headerContainer}>
-        <div className={styles.headerContent}>
-          <div className={styles.logoHeader}>
-            {/* <img className={styles.logo} src="/images/____.png" alt="" /> */}
+      <Container>
+        {/* Primeira div */}
+        <HeaderContent>
+          <div>
+            {/* <img src="/images/____.png" alt="" /> */}
             <h1>Pub Name</h1>
           </div>
 
-          <div className={styles.logoWithLinks}>
-            <div className={classOn ? styles.menuSectionOn : styles.menuSection} onClick={() => setClassOn(!classOn)}>
-              <div className={styles.menuToggle}>
-                <div className={styles.one} />
-                <div className={styles.two} />
-                <div className={styles.three} />
+          <Menu>
+            <div className={classOn ? 'menuSectionOn' : 'menuSection'} onClick={() => setClassOn(!classOn)}>
+              <div className='menuToggle'>
+                <div className='one' />
+                <div className='two' />
+                <div className='three' />
               </div>
 
-              <nav className={styles.listItems}>
+              <nav className='listItems'>
 
                 <ul>
                   <li>
-                    <ActiveLink activeClassName={styles.active} href="/">
-                      <a className={styles.active}>Home</a>
+                    <ActiveLink activeClassName='active' href="/">
+                      <a className='active'>Home</a>
                     </ActiveLink>
                   </li>
                   <li>
-                    <ActiveLink activeClassName={styles.active} href="/historias">
-                      <a>Histórias</a>
+                    <ActiveLink activeClassName='active' href="/projects">
+                      <a>Projetos</a>
                     </ActiveLink>
                   </li>
                 </ul>
               </nav>
             </div>
-          </div>
-        </div>
-
-      </header>
+          </Menu>
+        </HeaderContent>
+      </Container>
     </>
   )
 }
