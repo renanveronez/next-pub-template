@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { ActiveLink } from './ActiveLink';
 import styles from './styles.module.scss';
-
+import { Container, HeaderContent, Menu, MenuToggle } from './styles';
 
 
 export function Header() {
@@ -9,14 +9,15 @@ export function Header() {
 
   return (
     <>
-      <header className={styles.headerContainer}>
-        <div className={styles.headerContent}>
-          <div className={styles.logoHeader}>
-            {/* <img className={styles.logo} src="/images/____.png" alt="" /> */}
+      <Container>
+        {/* Primeira div */}
+        <HeaderContent>
+          <div>
+            {/* <img src="/images/____.png" alt="" /> */}
             <h1>Pub Name</h1>
           </div>
 
-          <div className={styles.logoWithLinks}>
+          <Menu>
             <div className={classOn ? styles.menuSectionOn : styles.menuSection} onClick={() => setClassOn(!classOn)}>
               <div className={styles.menuToggle}>
                 <div className={styles.one} />
@@ -40,10 +41,9 @@ export function Header() {
                 </ul>
               </nav>
             </div>
-          </div>
-        </div>
-
-      </header>
+          </Menu>
+        </HeaderContent>
+      </Container>
     </>
   )
 }
