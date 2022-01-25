@@ -1,6 +1,6 @@
 import Head from 'next/head';
 import BannerProject from '../../../components/BannerProject';
-import Header from '../../../components/Header';
+import { Header } from '../../../components/Header';
 import { ProjectContainer } from '../../../styles/ProjectContainerStyles';
 
 export default function Projeto() {

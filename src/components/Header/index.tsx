@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { ActiveLink } from './ActiveLink';
-import styles from './styles.module.scss';
-import { Container, HeaderContent, Menu, MenuToggle } from './styles';
+import { Container, HeaderContent, Menu } from './styles';
 
 
 export function Header() {
@@ -18,24 +17,24 @@ export function Header() {
           </div>
 
           <Menu>
-            <div className={classOn ? styles.menuSectionOn : styles.menuSection} onClick={() => setClassOn(!classOn)}>
-              <div className={styles.menuToggle}>
-                <div className={styles.one} />
-                <div className={styles.two} />
-                <div className={styles.three} />
+            <div className={classOn ? 'menuSectionOn' : 'menuSection'} onClick={() => setClassOn(!classOn)}>
+              <div className='menuToggle'>
+                <div className='one' />
+                <div className='two' />
+                <div className='three' />
               </div>
 
-              <nav className={styles.listItems}>
+              <nav className='listItems'>
 
                 <ul>
                   <li>
-                    <ActiveLink activeClassName={styles.active} href="/">
-                      <a className={styles.active}>Home</a>
+                    <ActiveLink activeClassName='active' href="/">
+                      <a className='active'>Home</a>
                     </ActiveLink>
                   </li>
                   <li>
-                    <ActiveLink activeClassName={styles.active} href="/historias">
-                      <a>Histórias</a>
+                    <ActiveLink activeClassName='active' href="/projects">
+                      <a>Projetos</a>
                     </ActiveLink>
                   </li>
                 </ul>
