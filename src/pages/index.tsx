@@ -8,6 +8,7 @@ import { Header } from '../components/Header';
 import FormContact from '../components/FormContact';
 import Footer from '../components/Footer';
 import { Banner } from '../components/Carousel';
+import ParallaxItem from '../components/Parallax/ParallaxItem';
 
 
 
@@ -48,11 +49,19 @@ export default function Home() {
         </div>
       </Location>
 
-      <Since>
-        <div data-aos="fade-right">
-          <p>Established In 1990</p>
-        </div>
-      </Since>
+      <div className='sinceParallax'>
+        <Since>
+          <div data-aos="fade-right">
+            <p>Established In 1990</p>
+          </div>
+        </Since>
+
+        <ParallaxItem
+          backgroundImage='https://static.spotapps.co/web/1970twinsirishpub--com/custom/about_us_left.jpg'
+          description='A trip to space'
+        />
+
+      </div>
 
       <FormContact />
 

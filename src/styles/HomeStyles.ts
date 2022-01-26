@@ -11,6 +11,8 @@ export const HomeContainer = styled.div`
     flex-direction: column;
     gap: 8rem;
   }
+
+  .sinceParallax {}
 `;
 
 export const Location = styled.div`

@@ -1,16 +1,13 @@
-import { Parallax } from 'react-parallax';
-import Nasa from './nasa.jpg';
-import { Container } from './styles';
+import ParallaxItem from './ParallaxItem';
 
 
 const ImageOne = () => (
-  <Container>
-    <Parallax className='image' blur={0} bgImage={Nasa} strength={800} bgImageStyle={{ minHeight: "100vh" }}>
-      <div className='content'>
-        <span className="img-txt">a trip to Space</span>
-      </div>
-    </Parallax>
-  </Container>
+
+  <ParallaxItem
+    backgroundImage='https://static.spotapps.co/web/1970twinsirishpub--com/custom/about_us_left.jpg'
+    description='A trip to space'
+  />
+
 );
 
 export default ImageOne

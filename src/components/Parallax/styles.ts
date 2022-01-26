@@ -43,3 +43,33 @@ h3 {
 
 
 `
+
+export const ParallaxContainer = styled.div`
+.image {
+  min-height: 30rem;
+  width: 50%;
+  position: relative;
+  object-fit: cover;
+  justify-content: flex-end;
+
+}
+
+.image .content {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.content span.img-txt {
+  background-color: #333;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
+`
