@@ -11,7 +11,7 @@ export const MainContainer = styled.section`
   position: fixed;
   width: 100%;
   z-index: 1;
-  background-color: ${({ theme }) => theme.backgroundLight};
+  background-color: ${({ theme }) => theme.background};
 `
 
 export const HeaderContent = styled.section`
@@ -46,7 +46,7 @@ export const Menu = styled.section`
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: #11172B;
+    background: ${({ theme }) => theme.background};
     opacity: 0.95;
     z-index: 10;
     display: flex;
@@ -73,10 +73,6 @@ export const Menu = styled.section`
       }
     }
   }
-
-
-
-
 
 
   @media (min-width:200px) and (max-width:1120px){
@@ -117,7 +113,7 @@ export const Menu = styled.section`
       display: inline-block;
       position: relative;
       padding: 0 0.5rem;
-      height: 5rem;
+      height: 2rem;
       line-height: 6.5rem;
       color: white;
       font-size: 1.5rem;
@@ -134,7 +130,7 @@ export const Menu = styled.section`
 
       &.active::after {
         background: ${({ theme }) => theme.menuSelected};
-        margin-bottom: 6px;
+        margin-bottom: 1px;
       }
     }
   }
@@ -177,7 +173,7 @@ export const NavLinkContainer = styled.li<NavLinkProps>`
         position: absolute;
         bottom: 1px;
         left: 0;
-        background: green;
+        background: red;
       }
   }
 `;

@@ -29,7 +29,7 @@ export function Header() {
                 <Container>
                   <ul>
                     <NavLink title="Home" path="/" />
-                    <NavLink title="Projects" path="/projects" includes />
+                    <NavLink title="Menu" path="/projects" includes />
                   </ul>
                 </Container>
               </nav>
