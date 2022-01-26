@@ -47,11 +47,8 @@ h3 {
 export const ParallaxContainer = styled.div`
 .image {
   min-height: 30rem;
-  width: 50%;
+  width: 100%;
   position: relative;
-  object-fit: cover;
-  justify-content: flex-end;
-
 }
 
 .image .content {
@@ -68,7 +65,7 @@ export const ParallaxContainer = styled.div`
   text-transform: uppercase;
   color: #fff;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   letter-spacing: 10px;
 }
 

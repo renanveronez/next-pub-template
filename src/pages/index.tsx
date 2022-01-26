@@ -50,16 +50,20 @@ export default function Home() {
       </Location>
 
       <div className='sinceParallax'>
-        <Since>
-          <div data-aos="fade-right">
-            <p>Established In 1990</p>
-          </div>
-        </Since>
+        <div className='since'>
+          <Since>
+            <div data-aos="fade-right">
+              <p>Established In 1990</p>
+            </div>
+          </Since>
+        </div>
 
-        <ParallaxItem
-          backgroundImage='https://static.spotapps.co/web/1970twinsirishpub--com/custom/about_us_left.jpg'
-          description='A trip to space'
-        />
+        <div className='parallax'>
+          <ParallaxItem
+            backgroundImage='https://i.imgur.com/9gJ32CV.png'
+            description='A trip to space'
+          />
+        </div>
 
       </div>
 

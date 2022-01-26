@@ -12,7 +12,33 @@ export const HomeContainer = styled.div`
     gap: 8rem;
   }
 
-  .sinceParallax {}
+  .sinceParallax {
+    display: flex;
+    width: 100%;
+
+    .since {
+      width: 50%;
+    }
+    .parallax {
+      width: 50%;
+      object-fit: cover;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .sinceParallax {
+    display: flex;
+    flex-direction: column;
+
+    .since {
+      width: 100%;
+    }
+    .parallax {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  }
 `;
 
 export const Location = styled.div`
