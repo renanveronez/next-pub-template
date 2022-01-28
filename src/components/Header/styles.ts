@@ -34,6 +34,11 @@ export const HeaderContent = styled.section`
       padding-left: 0px;
       font-size: 2.7rem;
       color: white;
+
+      @media (max-width:1120px){
+        font-size: 1.7rem;
+      }
+
     }
   }
 `
@@ -95,12 +100,21 @@ export const Menu = styled.section`
       width: 100%;
       margin: 6px auto;
       transition-duration: 0.3s;
+
+
     }
 
     .menuToggle{
       width: 40px;
       height: 30px;
       margin-right: 0px;
+
+      @media (max-width:1120px){
+        width: 40px;
+        height: 40px;
+        margin-right: -10px;
+      }
+
     }
 
     ul {
@@ -146,8 +160,9 @@ export const Container = styled.header`
 
   ul {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     align-items: center;
+    padding-right: 3rem;
   }
 `;
 

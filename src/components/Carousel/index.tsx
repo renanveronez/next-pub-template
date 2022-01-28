@@ -3,7 +3,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Container } from './styles'
 
 
-export function Banner() {
+export function CarouselBanner() {
   return (
     <Container>
       <div>

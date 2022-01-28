@@ -46,7 +46,7 @@ export const Location = styled.div`
   > div {
     display: flex;
     flex-direction: column;
-    height: 12rem;
+    height: 11rem;
     background-color: black;
     margin-top: -0.8rem;
     padding-bottom: 2rem;
@@ -59,6 +59,17 @@ export const Location = styled.div`
       color: yellow;
       bottom: 0;
       font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 600px) {
+
+    > div {
+      height: 10rem;
+      p {
+        font-size: 0.9rem;
+      }
+
     }
   }
 `

@@ -40,11 +40,6 @@ export const Container = styled.div`
     }
   }
 
-  @media(max-width: 520px) {
-    .carousel .slide img {
-      height: 18rem;;
-  }
-
   .carousel .control-dots .dot {
     width: 11px;
     height: 11px;
