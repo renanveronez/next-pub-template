@@ -97,7 +97,7 @@ export const Since = styled.div`
 `
 
 export const Place = styled.div`
-  display: absolute;
+
   margin-top: -3rem;
   z-index: 1;
   > div {
@@ -115,18 +115,16 @@ export const Place = styled.div`
   }
 
   @media (max-width: 1200px) {
-    z-index: 1;
     margin-top: -1rem;
+
     > div {
     margin: -0.5rem 0;
     height: 10rem;
 
-
-    > p {
-      color: yellow;
-      font-size: 1rem;
+      > p {
+        color: yellow;
+        font-size: 1rem;
+      }
     }
   }
-  }
-
 `
