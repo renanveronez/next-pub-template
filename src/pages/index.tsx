@@ -64,7 +64,7 @@ export default function Home() {
           <div className='parallax'>
             <ParallaxItem
               backgroundImage={Toast}
-              description='A trip to space'
+              description='Cheers'
             />
           </div>
 
@@ -73,7 +73,7 @@ export default function Home() {
         <Place>
           <Faixatop />
           <div>
-            <p>Know the place below</p>
+            <p>Gallery</p>
           </div>
           <Faixabottom />
         </Place>

@@ -35,7 +35,7 @@ export const Container = styled.div`
 
   @media(max-width: 1110px) {
     .carousel .slide img {
-      height: 92vh;
+      height: 60vh;
       object-fit: cover;
     }
   }

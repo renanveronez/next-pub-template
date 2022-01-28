@@ -103,6 +103,11 @@ export const Since = styled.div`
       font-size: 1.3rem;
       font-weight: 600;
       letter-spacing: 10px;
+
+      @media (max-width:600px){
+        letter-spacing: 5px;
+        font-size: 0.9rem;
+      }
     }
   }
 `
@@ -130,7 +135,7 @@ export const Place = styled.div`
 
     > div {
     margin: -0.5rem 0;
-    height: 10rem;
+    height: 6rem;
 
       > p {
         color: yellow;

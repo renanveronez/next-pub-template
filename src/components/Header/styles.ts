@@ -100,8 +100,6 @@ export const Menu = styled.section`
       width: 100%;
       margin: 6px auto;
       transition-duration: 0.3s;
-
-
     }
 
     .menuToggle{
@@ -160,9 +158,13 @@ export const Container = styled.header`
 
   ul {
     display: flex;
-    gap: 1rem;
+    gap: 5rem;
     align-items: center;
-    padding-right: 3rem;
+    padding-right: 1rem;
+
+    @media (max-width:1120px){
+      gap: 1.5rem;
+    }
   }
 `;
 
@@ -188,7 +190,6 @@ export const NavLinkContainer = styled.li<NavLinkProps>`
         position: absolute;
         bottom: 1px;
         left: 0;
-        background: red;
       }
   }
 `;
