@@ -3,13 +3,14 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
 import { SiGooglemaps } from 'react-icons/si';
-import { HomeContainer, Location, Since } from '../styles/HomeStyles'
+import { HomeContainer, Location, Since, Place } from '../styles/HomeStyles'
 import { Header } from '../components/Header';
-import FormContact from '../components/FormContact';
 import Footer from '../components/Footer';
 import { Banner } from '../components/Carousel';
 import ParallaxItem from '../components/Parallax/ParallaxItem';
-
+import Toast from '../../public/toast.jpg'
+import Faixatop from '../assets/faixatop.svg';
+import Faixabottom from '../assets/faixabottom.svg';
 
 
 export default function Home() {
@@ -60,14 +61,22 @@ export default function Home() {
 
         <div className='parallax'>
           <ParallaxItem
-            backgroundImage='https://i.imgur.com/9gJ32CV.png'
+            backgroundImage={Toast}
             description='A trip to space'
           />
         </div>
 
       </div>
 
-      <FormContact />
+      <Place>
+        <Faixatop />
+        <div>
+          <p>Know the place below</p>
+        </div>
+        <Faixabottom />
+      </Place>
+
+
 
       <Footer />
     </HomeContainer>

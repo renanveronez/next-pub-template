@@ -35,7 +35,7 @@ export const HomeContainer = styled.div`
     }
     .parallax {
       width: 100%;
-      object-fit: cover;
+
     }
   }
   }
@@ -94,4 +94,39 @@ export const Since = styled.div`
       letter-spacing: 10px;
     }
   }
+`
+
+export const Place = styled.div`
+  display: absolute;
+  margin-top: -3rem;
+  z-index: 1;
+  > div {
+    margin-top: -1rem;
+    display: flex;
+    height: 15rem;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+
+    > p {
+      color: yellow;
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 1200px) {
+    z-index: 1;
+    margin-top: -1rem;
+    > div {
+    margin: -0.5rem 0;
+    height: 10rem;
+
+
+    > p {
+      color: yellow;
+      font-size: 1rem;
+    }
+  }
+  }
+
 `

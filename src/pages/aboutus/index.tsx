@@ -7,9 +7,9 @@ import TextBox from '../../components/Parallax/TextBox';
 export default function Aboutus() {
   return (
     <>
-      <ImageOne />
-      <TextBox />
       <ImageTwo />
+      <TextBox />
+      <ImageOne />
       <TextBox />
       <ImageThree />
     </>
