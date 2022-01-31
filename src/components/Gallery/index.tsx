@@ -1,8 +1,13 @@
 import { Gallery, Place } from './styles'
 import Faixatop from '../../assets/faixatop.svg';
 import Faixabottom from '../../assets/faixabottom.svg';
-import Toast from '../../../public/toast.jpg'
-import Pic from '../../../public/a1.png'
+import Pic1 from '../../../public/a1.jpg';
+import Pic2 from '../../../public/a2.jpg';
+import Pic3 from '../../../public/a3.jpg';
+import Pic4 from '../../../public/a4.jpg';
+import Pic5 from '../../../public/a5.jpg';
+import Pic6 from '../../../public/a6.jpg';
+import Pic7 from '../../../public/a7.jpg';
 
 function GalleryHome() {
   return (
@@ -18,31 +23,31 @@ function GalleryHome() {
       <Gallery>
         <div className='left' data-aos="fade-up">
           <div className='zoom'>
-            <img src={Pic} alt="Bar" />
+            <img src={Pic6} alt="Bar" />
           </div>
         </div>
         <div className='columnOne' data-aos="fade-up">
           <div className='zoom'>
-            <img src={Toast} alt="Toast1" />
+            <img src={Pic7} alt="Pic 1" />
           </div>
           <div className='zoom'>
-            <img src={Toast} alt="Toast2" />
-          </div>
-        </div>
-        <div className='columnOne' data-aos="fade-up">
-          <div className='zoom'>
-            <img src={Toast} alt="Toast3" />
-          </div>
-          <div className='zoom'>
-            <img src={Toast} alt="Toast4" />
+            <img src={Pic1} alt="Pic 2" />
           </div>
         </div>
         <div className='columnOne' data-aos="fade-up">
           <div className='zoom'>
-            <img src={Toast} alt="Toast5" />
+            <img src={Pic2} alt="Pic 3" />
           </div>
           <div className='zoom'>
-            <img src={Toast} alt="Toast6" />
+            <img src={Pic3} alt="Pic 4" />
+          </div>
+        </div>
+        <div className='columnOne' data-aos="fade-up">
+          <div className='zoom'>
+            <img src={Pic5} alt="Pic 5" />
+          </div>
+          <div className='zoom'>
+            <img src={Pic4} alt="Pic 6" />
           </div>
         </div>
       </Gallery>
