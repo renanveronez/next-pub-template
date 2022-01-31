@@ -74,7 +74,6 @@ grid-template-columns: 40% 20% 20% 20%;
 
     .columnOne {
       display: grid;
-
       grid-template-columns: 50% 50%;
 
       > div {
