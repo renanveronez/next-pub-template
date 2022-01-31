@@ -12,7 +12,7 @@ import Toast from '../../public/toast.jpg'
 
 import Faixatop from '../assets/faixatop.svg';
 import Faixabottom from '../assets/faixabottom.svg';
-import GalleryHome from '../components/Home/Gallery';
+import GalleryHome from '../components/Gallery';
 
 export default function Home() {
   useEffect(() => {

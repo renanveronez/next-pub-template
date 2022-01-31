@@ -1,11 +1,11 @@
 import { Gallery } from './styles'
-import Pic1 from '../../../../public/a1.png';
-import Pic2 from '../../../../public/a2.png';
-import Pic3 from '../../../../public/a3.png';
-import Pic4 from '../../../../public/a4.png';
-import Pic5 from '../../../../public/a5.png';
-import Pic6 from '../../../../public/a6.png';
-import Pic7 from '../../../../public/a7.png';
+import Pic1 from '../../../public/a1.png';
+import Pic2 from '../../../public/a2.png';
+import Pic3 from '../../../public/a3.png';
+import Pic4 from '../../../public/a4.png';
+import Pic5 from '../../../public/a5.png';
+import Pic6 from '../../../public/a6.png';
+import Pic7 from '../../../public/a7.png';
 
 function GalleryHome() {
   return (
