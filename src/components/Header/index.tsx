@@ -1,5 +1,4 @@
 import { useState } from 'react';
-// import { ActiveLink } from './ActiveLink';
 import NavLink from './NavLink';
 import { Container, MainContainer, HeaderContent, Menu } from './styles';
 
@@ -9,7 +8,6 @@ export function Header() {
   return (
     <>
       <MainContainer>
-        {/* Primeira div */}
         <HeaderContent>
           <div>
             {/* <img src="/images/____.png" alt="" /> */}

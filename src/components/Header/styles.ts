@@ -119,14 +119,15 @@ export const Menu = styled.section`
       display: absolute;
       flex-direction: column;
       align-items: center;
+      justify-content: center;
     }
 
     a {
       display: inline-block;
       position: relative;
-      padding: 0 0.5rem;
+      padding-right: 2rem;
       height: 2rem;
-      line-height: 6.5rem;
+      line-height: 5rem;
       color: white;
       font-size: 1.5rem;
       transition: color 0.2s;
@@ -154,7 +155,6 @@ export const Container = styled.header`
   align-items: center;
   justify-content: center;
   height: 4rem;
-  border-bottom: 1px solid ${({ theme }) => theme.backgroundLight};
 
   ul {
     display: flex;
@@ -181,15 +181,5 @@ export const NavLinkContainer = styled.li<NavLinkProps>`
       ? lighten(0.2, props.theme.primary)
       : lighten(0.2, props.theme.textHighlight)};
     }
-
-    &.active::after {
-        content: '';
-        height: 5px;
-        border-radius: 3px 3px 0 0;
-        width: 100%;
-        position: absolute;
-        bottom: 1px;
-        left: 0;
-      }
   }
 `;

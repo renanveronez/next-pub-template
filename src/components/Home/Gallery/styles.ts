@@ -24,4 +24,30 @@ grid-template-columns: 40% 20% 20% 20%;
       }
     }
   }
+
+  @media (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+
+    .left {
+      width: 100%;
+      > div {
+        > img {
+          margin-bottom: -5px;
+        }
+      }
+    }
+
+    .columnOne {
+      display: grid;
+
+      grid-template-columns: 50% 50%;
+
+      > div {
+        > img {
+          margin-bottom: -5px;
+        }
+      }
+    }
+  }
 `
