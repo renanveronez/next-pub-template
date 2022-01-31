@@ -114,7 +114,7 @@ export const Since = styled.div`
 
 export const Place = styled.div`
 
-  margin-top: -3rem;
+  margin-top: 1rem;
   z-index: 1;
   > div {
     margin-top: -1rem;
@@ -141,6 +141,58 @@ export const Place = styled.div`
       > p {
         color: yellow;
         font-size: 1.5rem;
+      }
+    }
+  }
+`
+export const Contact = styled.div`
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
+    background-color: black;
+    margin-top: -0.5rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+    p:nth-child(1) {
+        padding-top: 1.5rem;
+        font-size: 3rem;
+      }
+      p:nth-child(2) {
+        padding-top: 2rem;
+        font-size: 1.55rem;
+      }
+      p:nth-child(3) {
+        text-align: center;
+        padding-top: 1.5rem;
+        font-size: 1.5rem;
+        color: yellow;
+      }
+  }
+
+  @media (max-width: 600px) {
+
+    > div {
+      height: 14rem;
+      justify-content: flex-start;
+
+      p:nth-child(1) {
+        padding-top: 2rem;
+        font-size: 1.7rem;
+      }
+      p:nth-child(2) {
+        padding-top: 2.5rem;
+        font-size: 1.45rem;
+      }
+      p:nth-child(3) {
+        text-align: center;
+        padding-top: 1.5rem;
+        font-size: 1rem;
+        color: yellow;
       }
     }
   }

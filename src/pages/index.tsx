@@ -3,7 +3,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
 import { SiGooglemaps } from 'react-icons/si';
-import { HomeContainer, Location, Since, Place } from '../styles/HomeStyles'
+import { HomeContainer, Location, Since, Place, Contact } from '../styles/HomeStyles'
 import { Header } from '../components/Header';
 import Footer from '../components/Footer';
 import { CarouselBanner } from '../components/Carousel';
@@ -79,6 +79,16 @@ export default function Home() {
         </Place>
 
         <GalleryHome />
+
+        <Contact>
+          <Faixatop />
+          <div>
+            <p>HOURS</p>
+            <p>Kitchen Open</p>
+            <p>Monday - Friday until 10pm</p>
+          </div>
+          <Faixabottom />
+        </Contact>
 
       </HomeContainer>
       <Footer />

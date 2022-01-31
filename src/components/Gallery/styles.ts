@@ -12,7 +12,7 @@ grid-template-columns: 40% 20% 20% 20%;
     }
 
     > img:hover {
-      transform: scale(1.5);
+      transform: scale(1.2);
     }
   }
 
