@@ -3,16 +3,17 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
 import { SiGooglemaps } from 'react-icons/si';
-import { HomeContainer, Location, Since, Place, Contact } from '../styles/HomeStyles'
+import { HomeContainer, Location, Since, Contact } from '../styles/HomeStyles'
+
 import { Header } from '../components/Header';
 import Footer from '../components/Footer';
 import { CarouselBanner } from '../components/Carousel';
 import ParallaxItem from '../components/Parallax/ParallaxItem';
 import Toast from '../../public/toast.jpg'
-
 import Faixatop from '../assets/faixatop.svg';
 import Faixabottom from '../assets/faixabottom.svg';
 import GalleryHome from '../components/Gallery';
+
 
 export default function Home() {
   useEffect(() => {
@@ -26,7 +27,7 @@ export default function Home() {
           <title>Home | Pub</title>
           <meta
             name="description"
-            content="I'm a front-end developer living in Cork and here I present some projects developed by me!"
+            content="Welcome to Irish pub"
           />
           <meta property="og:image" content="/ogimage.png" />
           <meta property="og:image:secure_url" content="/ogimage.png" />
@@ -34,7 +35,7 @@ export default function Home() {
           <meta name="twitter:image:src" content="/ogimage.png" />
           <meta
             property="og:description"
-            content="I'm a front-end developer living in Cork and here I present some projects developed by me!"
+            content="Welcome to Irish pub"
           />
         </Head>
 
@@ -69,14 +70,6 @@ export default function Home() {
           </div>
 
         </div>
-
-        <Place>
-          <Faixatop />
-          <div>
-            <p>Gallery</p>
-          </div>
-          <Faixabottom />
-        </Place>
 
         <GalleryHome />
 
