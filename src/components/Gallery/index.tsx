@@ -1,4 +1,6 @@
-import { Gallery } from './styles'
+import { Gallery, Place } from './styles'
+import Faixatop from '../../assets/faixatop.svg';
+import Faixabottom from '../../assets/faixabottom.svg';
 import Pic1 from './a1.png';
 import Pic2 from './a2.png';
 import Pic3 from './a3.png';
@@ -9,37 +11,47 @@ import Pic7 from './a7.png';
 
 function GalleryHome() {
   return (
-    <Gallery>
-      <div className='left' data-aos="fade-up">
-        <div className='zoom'>
-          <img src={Pic6} alt="Bar" />
+    <>
+      <Place>
+        <Faixatop />
+        <div>
+          <p>Gallery</p>
         </div>
-      </div>
-      <div className='columnOne' data-aos="fade-up">
-        <div className='zoom'>
-          <img src={Pic7} alt="Pic 1" />
+        <Faixabottom />
+      </Place>
+
+      <Gallery>
+        <div className='left' data-aos="fade-up">
+          <div className='zoom'>
+            <img src={Pic6} alt="Bar" />
+          </div>
         </div>
-        <div className='zoom'>
-          <img src={Pic1} alt="Pic 2" />
+        <div className='columnOne' data-aos="fade-up">
+          <div className='zoom'>
+            <img src={Pic7} alt="Pic 1" />
+          </div>
+          <div className='zoom'>
+            <img src={Pic1} alt="Pic 2" />
+          </div>
         </div>
-      </div>
-      <div className='columnOne' data-aos="fade-up">
-        <div className='zoom'>
-          <img src={Pic2} alt="Pic 3" />
+        <div className='columnOne' data-aos="fade-up">
+          <div className='zoom'>
+            <img src={Pic2} alt="Pic 3" />
+          </div>
+          <div className='zoom'>
+            <img src={Pic3} alt="Pic 4" />
+          </div>
         </div>
-        <div className='zoom'>
-          <img src={Pic3} alt="Pic 4" />
+        <div className='columnOne' data-aos="fade-up">
+          <div className='zoom'>
+            <img src={Pic5} alt="Pic 5" />
+          </div>
+          <div className='zoom'>
+            <img src={Pic4} alt="Pic 6" />
+          </div>
         </div>
-      </div>
-      <div className='columnOne' data-aos="fade-up">
-        <div className='zoom'>
-          <img src={Pic5} alt="Pic 5" />
-        </div>
-        <div className='zoom'>
-          <img src={Pic4} alt="Pic 6" />
-        </div>
-      </div>
-    </Gallery>
+      </Gallery>
+    </>
   );
 }
 
