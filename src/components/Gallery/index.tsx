@@ -1,7 +1,8 @@
 import { Gallery, Place } from './styles'
 import Faixatop from '../../assets/faixatop.svg';
 import Faixabottom from '../../assets/faixabottom.svg';
-import Toast from '../../public/toast.jpg'
+import Toast from '../../../public/toast.jpg'
+import Pic from '../../../public/a1.png'
 
 function GalleryHome() {
   return (
@@ -17,7 +18,7 @@ function GalleryHome() {
       <Gallery>
         <div className='left' data-aos="fade-up">
           <div className='zoom'>
-            <img src={Toast} alt="Bar" />
+            <img src={Pic} alt="Bar" />
           </div>
         </div>
         <div className='columnOne' data-aos="fade-up">
