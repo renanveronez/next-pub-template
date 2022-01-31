@@ -10,12 +10,12 @@ import Pic7 from './a7.png';
 function GalleryHome() {
   return (
     <Gallery>
-      <div className='left'>
+      <div className='left' data-aos="fade-up">
         <div className='zoom'>
           <img src={Pic6} alt="Bar" />
         </div>
       </div>
-      <div className='columnOne'>
+      <div className='columnOne' data-aos="fade-up">
         <div className='zoom'>
           <img src={Pic7} alt="Pic 1" />
         </div>
@@ -23,7 +23,7 @@ function GalleryHome() {
           <img src={Pic1} alt="Pic 2" />
         </div>
       </div>
-      <div className='columnOne'>
+      <div className='columnOne' data-aos="fade-up">
         <div className='zoom'>
           <img src={Pic2} alt="Pic 3" />
         </div>
@@ -31,7 +31,7 @@ function GalleryHome() {
           <img src={Pic3} alt="Pic 4" />
         </div>
       </div>
-      <div className='columnOne'>
+      <div className='columnOne' data-aos="fade-up">
         <div className='zoom'>
           <img src={Pic5} alt="Pic 5" />
         </div>
