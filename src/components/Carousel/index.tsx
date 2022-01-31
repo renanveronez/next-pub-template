@@ -6,13 +6,11 @@ import { Container } from './styles'
 export function CarouselBanner() {
   return (
     <Container>
-
       <Carousel
         autoPlay
         infiniteLoop
         transitionTime={1500}
         interval={5000}
-        showArrows
         showStatus={false}
       >
         <div className="containerCarousel">

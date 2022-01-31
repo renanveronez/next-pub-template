@@ -4,8 +4,12 @@ import styled from 'styled-components';
 export const Container = styled.div`
 
   .carousel .slide img {
-      height: 92vh;
+      height: 98vh;
     }
+
+  .control-arrow {
+  display: none;
+  }
 
   .carousel .thumb {
     display: none;
@@ -21,17 +25,9 @@ export const Container = styled.div`
     height: 15px;
   }
 
-  .carouesl.carouesl-slider.control-arrow {
-    padding-top: 0px;
-  }
-
-  .control-arrow {
-    height: 100%;
-  }
-
   @media(max-width: 1110px) {
     .carousel .slide img {
-      height: 60vh;
+      height: 40vh;
       object-fit: cover;
     }
   }
