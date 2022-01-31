@@ -152,7 +152,7 @@ export const Contact = styled.div`
     flex-direction: column;
     height: 16rem;
     background-color: black;
-    margin-top: -0.5rem;
+    margin: -0.5rem 0;
     padding-bottom: 2rem;
     justify-content: center;
     align-items: center;

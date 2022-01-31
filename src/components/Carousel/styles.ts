@@ -2,20 +2,16 @@ import styled from 'styled-components';
 
 
 export const Container = styled.div`
-  margin-bottom: 0rem;
-
-  div {
-    padding-top: 0.75rem;
-  }
 
   .carousel .slide img {
       height: 92vh;
-      object-fit: cover;
     }
 
   .carousel .thumb {
     display: none;
+    position: none;
   }
+
   .carousel .thumbs-wrapper {
     display: none;
   }
@@ -30,7 +26,7 @@ export const Container = styled.div`
   }
 
   .control-arrow {
-    display: none;
+    height: 100%;
   }
 
   @media(max-width: 1110px) {
@@ -44,14 +40,5 @@ export const Container = styled.div`
     width: 11px;
     height: 11px;
   }
-
 }
-
-  @media (max-width: 400px) {
-    .containerCarousel {
-      img {
-        height: 150px;
-      }
-    }
-  }
 `
