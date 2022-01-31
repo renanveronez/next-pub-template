@@ -1,11 +1,11 @@
 import { Gallery } from './styles'
-import Pic1 from '../../../public/a1.png';
-import Pic2 from '../../../public/a2.png';
-import Pic3 from '../../../public/a3.png';
-import Pic4 from '../../../public/a4.png';
-import Pic5 from '../../../public/a5.png';
-import Pic6 from '../../../public/a6.png';
-import Pic7 from '../../../public/a7.png';
+import Pic1 from './a1.png';
+import Pic2 from './a2.png';
+import Pic3 from './a3.png';
+import Pic4 from './a4.png';
+import Pic5 from './a5.png';
+import Pic6 from './a6.png';
+import Pic7 from './a7.png';
 
 function GalleryHome() {
   return (
@@ -17,26 +17,26 @@ function GalleryHome() {
       </div>
       <div className='columnOne'>
         <div className='zoom'>
-          <img src={Pic7} alt="Minha foto" />
+          <img src={Pic7} alt="Pic 1" />
         </div>
         <div className='zoom'>
-          <img src={Pic1} alt="Minha foto" />
-        </div>
-      </div>
-      <div className='columnOne'>
-        <div className='zoom'>
-          <img src={Pic2} alt="Minha foto" />
-        </div>
-        <div className='zoom'>
-          <img src={Pic3} alt="Minha foto" />
+          <img src={Pic1} alt="Pic 2" />
         </div>
       </div>
       <div className='columnOne'>
         <div className='zoom'>
-          <img src={Pic5} alt="Minha foto" />
+          <img src={Pic2} alt="Pic 3" />
         </div>
         <div className='zoom'>
-          <img src={Pic4} alt="Minha foto" />
+          <img src={Pic3} alt="Pic 4" />
+        </div>
+      </div>
+      <div className='columnOne'>
+        <div className='zoom'>
+          <img src={Pic5} alt="Pic 5" />
+        </div>
+        <div className='zoom'>
+          <img src={Pic4} alt="Pic 6" />
         </div>
       </div>
     </Gallery>

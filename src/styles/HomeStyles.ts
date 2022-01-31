@@ -131,7 +131,8 @@ export const Place = styled.div`
   }
 
   @media (max-width: 1200px) {
-    margin-top: -1rem;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
 
     > div {
     margin: -0.5rem 0;
@@ -139,7 +140,7 @@ export const Place = styled.div`
 
       > p {
         color: yellow;
-        font-size: 1rem;
+        font-size: 1.5rem;
       }
     }
   }
