@@ -35,9 +35,9 @@ export const Place = styled.div`
 `
 
 export const Gallery = styled.div`
-display: grid;
-grid-template-rows: 30% 70%;
-grid-template-columns: 40% 20% 20% 20%;
+display: flex;
+/* grid-template-rows: 30% 70%;
+grid-template-columns: 40% 20% 20% 20%; */
 
   .zoom {
     overflow: hidden;
@@ -46,11 +46,23 @@ grid-template-columns: 40% 20% 20% 20%;
     }
 
     > img:hover {
-      transform: scale(1.2);
+      transform: scale(1.15);
+    }
+  }
+
+  .left {
+    width: 50%;
+
+    > div {
+      > img {
+        margin-bottom: -5px;
+        object-fit: fill;
+      }
     }
   }
 
   .columnOne {
+    width: 34.1%;
     > div {
       > img {
         margin-bottom: -5px;
