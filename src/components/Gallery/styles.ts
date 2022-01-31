@@ -85,11 +85,13 @@ grid-template-columns: 40% 20% 20% 20%; */
     }
 
     .columnOne {
+      width: 100%;
       display: grid;
       grid-template-columns: 50% 50%;
 
       > div {
         > img {
+          height: 100%;
           margin-bottom: -5px;
         }
       }
