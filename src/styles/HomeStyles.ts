@@ -46,28 +46,38 @@ export const Location = styled.div`
   > div {
     display: flex;
     flex-direction: column;
-    height: 11rem;
+    height: 15rem;
     background-color: black;
     margin-top: -0.8rem;
-    padding-bottom: 2rem;
-    justify-content: flex-end;
+    padding-bottom: 0rem;
+    justify-content: center;
     align-items: center;
 
 
     > p {
-      padding-top: 1rem;
+      padding-top: 0.5rem;
       color: yellow;
       bottom: 0;
       font-size: 1.2rem;
+    }
+
+    p:first-child {
+      color: white;
+      padding-bottom: 1.75rem;
+      font-size: 2rem;
+
+      @media (max-width: 600px) {
+        font-size: 1.5rem;
+      }
     }
   }
 
   @media (max-width: 600px) {
 
     > div {
-      height: 10rem;
+      height: 15rem;
       p {
-        font-size: 0.9rem;
+        font-size: 1.1rem;
       }
 
     }
@@ -111,8 +121,8 @@ export const Since = styled.div`
     }
   }
 `
-export const Contact = styled.div`
-
+export const Time = styled.div`
+margin-top: 5rem;
   > div {
     display: flex;
     flex-direction: column;

@@ -3,7 +3,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Head from 'next/head';
 import { SiGooglemaps } from 'react-icons/si';
-import { HomeContainer, Location, Since, Contact } from '../styles/HomeStyles'
+import { HomeContainer, Location, Since, Time } from '../styles/HomeStyles'
 
 import { Header } from '../components/Header';
 import Footer from '../components/Footer';
@@ -12,7 +12,7 @@ import ParallaxItem from '../components/Parallax/ParallaxItem';
 import Toast from '../../public/toast.jpg'
 import Faixatop from '../assets/faixatop.svg';
 import Faixabottom from '../assets/faixabottom.svg';
-import GalleryHome from '../components/Gallery';
+import GalleryHome from '../components/Home/Gallery';
 
 
 export default function Home() {
@@ -46,10 +46,12 @@ export default function Home() {
         <Location>
 
           <div>
+            <p>Location</p>
             <a href="https://www.google.com.br/maps/place/Cork+International+Choral+Festival/@51.9011818,-8.4764434,17z/data=!3m1!4b1!4m13!1m7!3m6!1s0x4844900891beb961:0xa00c7a99731c5d0!2sCork,+Ireland!3b1!8m2!3d51.8985143!4d-8.4756035!3m4!1s0x4844901190bd94ef:0x824ab0aeb95f1d11!8m2!3d51.9011818!4d-8.4742808">
-              <SiGooglemaps color="yellow" fontSize="2.5rem" />
+              <SiGooglemaps color="yellow" fontSize="2rem" />
             </a>
-            <p>Pope’s Quay, Cork, Ireland</p>
+            <p>Pope’s Quay</p>
+            <p>Cork, Ireland</p>
           </div>
         </Location>
 
@@ -73,7 +75,7 @@ export default function Home() {
 
         <GalleryHome />
 
-        <Contact>
+        <Time>
           <Faixatop />
           <div>
             <p>HOURS</p>
@@ -81,7 +83,7 @@ export default function Home() {
             <p>Monday - Friday until 10pm</p>
           </div>
           <Faixabottom />
-        </Contact>
+        </Time>
 
       </HomeContainer>
       <Footer />

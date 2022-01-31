@@ -1,8 +1,7 @@
 import styled from 'styled-components';
 
 export const Place = styled.div`
-
-  margin-top: 1rem;
+  margin-top: 3rem;
   z-index: 1;
   > div {
     margin-top: -1rem;
@@ -35,9 +34,9 @@ export const Place = styled.div`
 `
 
 export const Gallery = styled.div`
-display: flex;
-/* grid-template-rows: 30% 70%;
-grid-template-columns: 40% 20% 20% 20%; */
+  display: flex;
+  margin-top: -2rem;
+
 
   .zoom {
     overflow: hidden;

@@ -56,3 +56,33 @@ export const Container = styled.footer`
     }
   }
 `;
+
+export const Section = styled.div`
+
+  > div {
+    display: flex;
+    flex-direction: column;
+    height: 14rem;
+    background-color: black;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: 600px) {
+      height: 11rem;
+    }
+
+    > p {
+      padding-top: 1rem;
+      padding-bottom: 1.5rem;
+      bottom: 0;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    > div {
+      display: flex;
+      gap: 1rem;
+    }
+  }
+`
