@@ -1,13 +1,7 @@
 import { Gallery, Place } from './styles'
 import Faixatop from '../../assets/faixatop.svg';
 import Faixabottom from '../../assets/faixabottom.svg';
-import Pic1 from './a1.png';
-import Pic2 from './a2.png';
-import Pic3 from './a3.png';
-import Pic4 from './a4.png';
-import Pic5 from './a5.png';
-import Pic6 from './a6.png';
-import Pic7 from './a7.png';
+import Toast from '../../public/toast.jpg'
 
 function GalleryHome() {
   return (
@@ -23,31 +17,31 @@ function GalleryHome() {
       <Gallery>
         <div className='left' data-aos="fade-up">
           <div className='zoom'>
-            <img src={Pic6} alt="Bar" />
+            <img src={Toast} alt="Bar" />
           </div>
         </div>
         <div className='columnOne' data-aos="fade-up">
           <div className='zoom'>
-            <img src={Pic7} alt="Pic 1" />
+            <img src={Toast} alt="Toast1" />
           </div>
           <div className='zoom'>
-            <img src={Pic1} alt="Pic 2" />
-          </div>
-        </div>
-        <div className='columnOne' data-aos="fade-up">
-          <div className='zoom'>
-            <img src={Pic2} alt="Pic 3" />
-          </div>
-          <div className='zoom'>
-            <img src={Pic3} alt="Pic 4" />
+            <img src={Toast} alt="Toast2" />
           </div>
         </div>
         <div className='columnOne' data-aos="fade-up">
           <div className='zoom'>
-            <img src={Pic5} alt="Pic 5" />
+            <img src={Toast} alt="Toast3" />
           </div>
           <div className='zoom'>
-            <img src={Pic4} alt="Pic 6" />
+            <img src={Toast} alt="Toast4" />
+          </div>
+        </div>
+        <div className='columnOne' data-aos="fade-up">
+          <div className='zoom'>
+            <img src={Toast} alt="Toast5" />
+          </div>
+          <div className='zoom'>
+            <img src={Toast} alt="Toast6" />
           </div>
         </div>
       </Gallery>
