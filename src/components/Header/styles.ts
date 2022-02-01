@@ -137,12 +137,12 @@ export const Menu = styled.section`
       }
 
       &.active {
-        color: ${({ theme }) => theme.menuSelected};
+        color: ${({ theme }) => theme.headerMenu};
         font-weight: bold;
       }
 
       &.active::after {
-        background: ${({ theme }) => theme.menuSelected};
+        background: ${({ theme }) => theme.headerMenu};
         margin-bottom: 1px;
       }
     }
@@ -172,14 +172,14 @@ export const NavLinkContainer = styled.li<NavLinkProps>`
   a {
     font-size: 1.5rem;
     color: ${props =>
-    props.isActive ? props.theme.primary : props.theme.textHighlight};
+    props.isActive ? props.theme.headerMenu : props.theme.textHighlight};
     transition: 0.5s;
 
     &:hover {
       color: ${props =>
     props.isActive
-      ? lighten(0.2, props.theme.primary)
-      : lighten(0.2, props.theme.textHighlight)};
+      ? lighten(0.2, props.theme.headerMenu)
+      : lighten(0.2, props.theme.headerMenuHighligh)};
     }
   }
 `;

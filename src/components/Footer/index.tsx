@@ -24,32 +24,24 @@ function Footer() {
         <div>
           <p>FIND US ON...</p>
           <div>
-            <div>
+            <div className='socialmedia'>
               <AiFillFacebook
                 onClick={() => handleRedirect('https://www.linkedin.com/in/renan-veronez-drechsler-54a4801a3/')}
-                color="white"
-                size={40}
               />
             </div>
-            <div>
+            <div className='socialmedia'>
               <AiOutlineInstagram
                 onClick={() => handleRedirect('https://www.linkedin.com/in/renan-veronez-drechsler-54a4801a3/')}
-                color="white"
-                size={40}
               />
             </div>
-            <div>
+            <div className='socialmedia'>
               <AiFillLinkedin
                 onClick={() => handleRedirect('https://www.linkedin.com/in/renan-veronez-drechsler-54a4801a3/')}
-                color="white"
-                size={40}
               />
             </div>
-            <div>
+            <div className='socialmedia'>
               <AiFillTwitterSquare
                 onClick={() => handleRedirect('https://www.linkedin.com/in/renan-veronez-drechsler-54a4801a3/')}
-                color="white"
-                size={40}
               />
             </div>
           </div>

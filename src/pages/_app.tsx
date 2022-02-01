@@ -3,6 +3,8 @@ import NextNProgress from 'nextjs-progressbar';
 
 import GlobalStyles from '../styles/global';
 import theme from '../styles/theme';
+import Footer from '../components/Footer';
+import { Header } from '../components/Header';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -14,7 +16,9 @@ function MyApp({ Component, pageProps }) {
         height={3}
         showOnShallow
       />
+      <Header />;
       <Component {...pageProps} />
+      <Footer />
       <GlobalStyles />
     </ThemeProvider>
   );

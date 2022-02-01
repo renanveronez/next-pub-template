@@ -4,9 +4,6 @@ import 'aos/dist/aos.css';
 import Head from 'next/head';
 import { SiGooglemaps } from 'react-icons/si';
 import { HomeContainer, Location, Since, Time } from '../styles/HomeStyles'
-
-import { Header } from '../components/Header';
-import Footer from '../components/Footer';
 import { CarouselBanner } from '../components/Home/Carousel';
 import ParallaxItem from '../components/Home/Parallax/ParallaxItem';
 import Toast from '../../public/toast.jpg'
@@ -39,8 +36,6 @@ export default function Home() {
           />
         </Head>
 
-
-        <Header />;
         <CarouselBanner />
 
         <Location>
@@ -86,7 +81,7 @@ export default function Home() {
         </Time>
 
       </HomeContainer>
-      <Footer />
+
     </>
   )
 

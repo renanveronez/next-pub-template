@@ -78,11 +78,24 @@ export const Section = styled.div`
       bottom: 0;
       font-size: 1.5rem;
       color: white;
+
+      @media (max-width: 600px) {
+        font-size: 1.2rem;
+      }
     }
 
     > div {
       display: flex;
       gap: 1rem;
+
+      .socialmedia {
+        color: white;
+        font-size: 40px;
+
+        @media (max-width: 600px) {
+          font-size: 30px;
+        }
+      }
     }
   }
 `
