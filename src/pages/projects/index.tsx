@@ -1,7 +1,7 @@
 import Head from 'next/head';
 
 import { Header } from '../../components/Header';
-import ProjectItemPage from '../../components/PageProjectItem';
+import ProjectItemPage from '../../components/NotUsed/PageProjectItem';
 import { ProjectsContainer } from '../../styles/ProjectsStyles';
 
 export default function Projects() {

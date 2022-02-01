@@ -7,8 +7,8 @@ import { HomeContainer, Location, Since, Time } from '../styles/HomeStyles'
 
 import { Header } from '../components/Header';
 import Footer from '../components/Footer';
-import { CarouselBanner } from '../components/Carousel';
-import ParallaxItem from '../components/Parallax/ParallaxItem';
+import { CarouselBanner } from '../components/Home/Carousel';
+import ParallaxItem from '../components/Home/Parallax/ParallaxItem';
 import Toast from '../../public/toast.jpg'
 import Faixatop from '../assets/faixatop.svg';
 import Faixabottom from '../assets/faixabottom.svg';

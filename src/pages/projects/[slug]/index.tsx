@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import BannerProject from '../../../components/BannerProject';
+import BannerProject from '../../../components/Home/BannerProject';
 import { Header } from '../../../components/Header';
 import { ProjectContainer } from '../../../styles/ProjectContainerStyles';
 
